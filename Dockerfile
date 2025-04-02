@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y tesseract-ocr && rm -rf /var/lib/apt/li
 COPY . .
 
 # Expose any necessary ports (if applicable)
-EXPOSE 5000  # Adjust if needed
+EXPOSE 5000  
 
 # Command to run the application
 CMD ["python", "app.py"]
